@@ -256,3 +256,65 @@ print('n' in s1)
 print('ea' in s1)
 print('learn' not in s1)
 
+#*Operator Precedence
+""" 
+1.()-> parentesis
+2.**-> exponential
+3.~,- -> bitwise complement , unary minus operator
+4.*,/.%,//->multiplication,division,modulo,floor division
+5.+,- -> addition, subtraction
+6.<<,>>-> left,right
+7.&-> Bitwise AND
+8.^-> Bitwise xor
+9.|-> Bitwise or
+10.>,>=,<,<=,==,!= -> relational operator
+11.=,+=,*=,-=,/= -> assignment operator
+12. is,is not -> Identity operator
+13. in, not in-> Membership operator
+14. not -> Logical NOT
+15. and -> Logical AND
+16. or ->Logical OR """
+
+s2=10
+s3=20
+s4=25
+s5=30
+s6=(s2+s3)%(s4+s5)
+s7=(s2+s3)*(s4/s5)
+s8=(10+12/20**15)
+s9=(3/2*4+3+(10/5)**3-2)
+print(s6,s7,s8,s9)
+
+#Mathematical Function
+#Collection of function, variable and classes
+import math# or from math import sqrt,pi,pow (using this we can directly use sqrt or any function instead of typing math every time)
+
+t1=math.sqrt(16) #The math.sqrt() method square root of given integer,
+t2= math.pi
+t3=math.ceil(1.4)#The math.ceil() method rounds a number upwards to its nearest integer
+t4= math.floor(1.4)# The math.floor() method rounds a number downwards to its nearest integer
+t5=math.pow(2,5)
+t6=math.log10(20)
+t7=math.factorial(10)
+t8=math.trunc(10)
+t9=math.gcd(10,20)
+t10=math.sin(10)
+t11=math.cos(10)
+t12=math.tan(10)
+print(t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12)
+
+# for more Details refer this link(https://www.w3schools.com/python/module_math.asp)
+#Important Variables of Math module
+# pi->3.14
+# e->2.71
+# inf-infinity
+# nan->not a number
+
+#Reading dynamic input from keyboard(raw_input,input)
+#1. raw_input()
+#t13=raw_input("Enter Value:") raw_input only used in python2
+#2.input()
+t14=input("Enter Value:")
+print(type(t14))
+# Command Line Argument
+#argv is not an arraz but a list
